@@ -1,0 +1,91 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="task"
+            type="com.ioncoj.data.models.Task"/>
+        <variable
+            name="storage"
+            type="com.google.firebase.storage.StorageReference"/>
+        <import type="android.view.View"/>
+        <import type="com.ioncoj.data.models.MenuBundle"/>
+        <import type="com.ioncoj.data.models.MenuBundle.TYPE"/>
+    </data>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/image"
+                app:src="@{task.url}"
+                app:repository="@{storage}"
+                android:layout_width="match_parent"
+                android:visibility="@{(task.url!=null)?View.VISIBLE:View.GONE}"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:id="@+id/titleLayout"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/small_margin"
+                android:layout_marginLeft="@dimen/toolbar_inline"
+                android:layout_marginRight="@dimen/toolbar_inline"
+                android:layout_below="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/title"
+                    android:text="@{task.title}"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    app:checked="@{task}"
+                    android:visibility="visible"
+                    android:id="@+id/checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="@dimen/half_small_margin"
+                android:layout_marginLeft="@dimen/toolbar_inline"
+                android:layout_marginRight="@dimen/toolbar_inline"
+                android:id="@+id/content"
+                android:layout_below="@+id/titleLayout"
+                android:text="@{task.content}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/half_small_margin"
+                android:id="@+id/rewords"
+                android:layout_below="@+id/content"
+                android:text="Rewards:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+
+                android:layout_marginLeft="@dimen/toolbar_inline"
+                android:layout_below="@+id/rewords"
+                app:type="@{MenuBundle.TYPE.co2}"
+                app:amount='@{task.co2}'
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_below="@+id/rewords"
+                app:amount='@{task.h2o}'
+                app:type="@{MenuBundle.TYPE.h2o}"
+                android:layout_marginRight="@dimen/toolbar_inline"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </ScrollView>
+</layout>

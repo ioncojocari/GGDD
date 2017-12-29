@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_margin">24dp</dimen>
+    <dimen name="big_margin">128dp</dimen>
+    <dimen name="card_height">450dp</dimen>
+    <dimen name="half_small_margin">12dp</dimen>
+</resources>

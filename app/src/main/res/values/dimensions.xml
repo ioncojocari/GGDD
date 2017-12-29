@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="start_of_toolbar_dimen">16dp</dimen>
+    <dimen name="small_margin">16dp</dimen>
+    <dimen name="half_small_margin">8dp</dimen>
+    <dimen name="big_margin">72dp</dimen>
+    <dimen name="card_height">260dp</dimen>
+    <dimen name="toolbar_inline">16dp</dimen>
+    <dimen name="half_toolbar_inline">8dp</dimen>
+</resources>

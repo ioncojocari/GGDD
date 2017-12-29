@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="MaterialTheme" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:buttonStyle">@style/button_style</item>
+        <item name="android:textViewStyle">@style/body_style</item>
+        <item name="android:titleTextStyle">@style/title_style</item>
+        <item name="android:editTextStyle">@style/edit_text_style</item>
+
+    </style>
+
+    <style name="button_style">
+        <item name="android:textSize">@dimen/buttons_font_size</item>
+        <item name="android:color">@color/primary_black_font_color</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">?selectableItemBackground</item>
+    </style>
+    
+    <style name="body_style">
+        <item name="android:textSize">@dimen/body_font_size</item>
+        <item name="android:color">@color/primary_black_font_color</item>
+    </style>
+
+    <style name="edit_text_style" parent="body_style">
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="caption_style">
+        <item name="android:textSize">@dimen/caption_font_size</item>
+        <item name="android:color">@color/secondary_black_font_color</item>
+    </style>
+
+    <style name="display_style">
+        <item name="android:textSize">@dimen/display_1_font_size</item>
+        <item name="android:color">@color/secondary_black_font_color</item>
+    </style>
+
+    <style name="title_style">
+        <item name="android:textSize">@dimen/title_font_size</item>
+        <item name="android:color">@color/primary_black_font_color</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="headline_style">
+        <item name="android:textSize">@dimen/title_font_size</item>
+        <item name="android:color">@color/primary_black_font_color</item>
+    </style>
+
+
+
+
+
+</resources>

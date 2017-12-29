@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="subheading_font_size">34sp</dimen>
+    <dimen name="body_font_size">30sp</dimen>
+    <dimen name="buttons_font_size">30sp</dimen>
+    <dimen name="app_bar_font_size">40sp</dimen>
+    <dimen name="headline_font_size">48sp</dimen>
+    <dimen name="title_font_size">@dimen/app_bar_font_size</dimen>
+    <dimen name="display_1_font_size">68sp</dimen>
+    <dimen name="caption_font_size">24sp</dimen>
+
+</resources>

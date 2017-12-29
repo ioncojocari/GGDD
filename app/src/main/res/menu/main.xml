@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/everyDay"
+        android:title="every day"
+        app:showAsAction="always" />
+    <item android:id="@+id/h2o"
+        android:title="h2o"
+        app:showAsAction="always" />
+    <item android:id="@+id/co2"
+        android:title="co2"
+        app:showAsAction="always" />
+    <item android:id="@+id/logout"
+        android:title="points"
+        android:icon="@drawable/ic_exit_to_app_black_24dp"
+        app:showAsAction="always" />
+
+</menu>

@@ -1,0 +1,38 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="id"
+            type="java.lang.Integer"/>
+    </data>
+
+<ScrollView android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                app:src="@{id}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="@dimen/small_margin"
+                android:text="@string/initial_text"
+                android:layout_marginRight="@dimen/toolbar_inline"
+                android:layout_marginLeft="@dimen/toolbar_inline"
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.AppCompatButton
+                android:layout_marginTop="@dimen/small_margin"
+                android:id="@+id/loginButton"
+                android:layout_gravity="center"
+                android:text="login"
+                android:padding="@dimen/half_small_margin"
+                android:background="?selectableItemBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+</ScrollView>
+</layout>
